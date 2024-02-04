@@ -1,0 +1,35 @@
+body {display: flex; background-color: #000000c1; height: 100%; width: 100%; flex-direction: column; padding: 0; margin: 0;}
+h1, h2, h3, h4, h5, h6, p, span, strong, title, em { font-family: 'Times New Roman', Times, serif; color: #fff; margin: 0; padding: 0; box-sizing: border-box;}
+
+.header {display: flex; height: 80px; padding: 10px; box-sizing: border-box; background-color: #000; display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 0 10px; box-sizing: border-box;}
+.header .logo {height: 40px; width: 40px; position: relative; border-radius: 50%;}
+.header .logo::before {content: ""; height: 38px; width: 38px; border-radius: 50%; position: absolute; z-index: 1; background: url(./img/Avi.png) no-repeat; background-position: center; background-size: contain;}
+.header .tools {display: flex; height: 50px; border-radius: 10px; color: #fff; width: auto; background-color: #a37dff; position: relative; justify-content: center; padding: 0 10px; box-sizing: border-box;}
+.header .tools::before {content: ""; width: 100%; position: absolute; z-index: 1; background-color: #000; height: 25px;}
+.header .tools ul {display: flex; list-style-type: none; gap: 10px; align-items: center; padding: 0; margin: 0; position: relative; z-index: 2;}
+.header .tools ul li {display: flex; list-style-type: none; background-color: #000; border-radius: 50%; width: 45px; height: 45px; justify-content: center; position: relative; align-items: center;}
+.header .tools ul li a {height: 30px; width: 30px; font-size: 0; background-color: #a37dff; display: flex; align-items: center; justify-content: center; border-radius: 50%; cursor: pointer;}
+.header .tools ul li a[aria-current="true"] {background-color: #f8f8f8;}
+.header .tools ul li a:hover {position: relative; bottom: 13px; transition-delay: 5s;}
+.header .tools ul li .home::before {content: ""; height: 40px; width: 40px; background: url(./img/house-solid.svg) no-repeat; background-position: center;}
+.header .tools ul li .about::before {content: ""; height: 40px; width: 40px; background: url(./img/address-book-solid.svg) no-repeat; background-position: center;}
+.header .tools ul li .contact::before {content: ""; height: 40px; width: 40px; background: url(./img/address-card-solid.svg) no-repeat; background-position: center;}
+.header .tools ul li .project::before {content: ""; height: 40px; width: 40px; background: url(./img/tarp-solid.svg) no-repeat; background-position: center;}
+.header .tools ul li .blog::before {content: ""; height: 20px; width: 20px; background: url(./img/blog-solid.svg) no-repeat; background-position: center;}
+.header .tools ul li .certificate::before {content: ""; height: 20px; width: 20px; background: url(./img/certificate-solid.svg) no-repeat; background-position: center;}
+.header .tools ul li::before {content: ""; width: 10px; height: 5px; position: absolute; border-radius: 50px 50px 0 0; background-color: #a37dff; top: 18px; left: -10px;}
+.header .tools ul li:last-child:after {content: ""; width: 10px; height: 5px; position: absolute; border-radius: 50px 50px 0 0; background-color: #a37dff; top: 18px; left: 45px;}
+.header .tools ul li a:active {background: #fff;}
+.main {height: calc(100vh - 80px); display: flex; align-items: center; justify-content: center;}
+
+/* home container  */
+.main.homeContent {display: flex; flex-direction: row; gap: 100px; flex-wrap: wrap; padding: 60px 40px; box-sizing: border-box; background-color: #000000e8;}
+.main.homeContent .thumbBox {width: 40%; max-width: 300px; aspect-ratio: 1; background-color: red; border-radius: 50%; padding: 5px; box-sizing: border-box; overflow: hidden;}
+.main.homeContent .thumbBox .thumb {aspect-ratio: 1; background-color: #000; border-radius: 50%; background: url(./img/picture_000.jpg) no-repeat center; height: 100%; width: 100%; background-size: contain;}
+.main.homeContent .thumbContent {display: flex; color: #fff; flex-direction: column; max-width: 60%;}
+.main.homeContent .thumbContent h1 {font-size: 64px; color: #fff; line-height: normal; font-weight: 700; font-family: Georgia, 'Times New Roman', Times, serif;}
+.main.homeContent .thumbContent h1 strong {font-size: 84px; color: #fff; line-height: normal; font-weight: 700; font-family: Georgia, 'Times New Roman', Times, serif;}
+.main.homeContent .thumbContent h2 {font-size: 34px; color: #fff; line-height: normal; font-weight: 700; font-family: Arial, Helvetica, sans-serif;}
+.main.homeContent .thumbContent p {font-size: 16px; color: #fff; line-height: normal; font-weight: 700; font-family: Arial, Helvetica, sans-serif; word-break: break-word; margin-top: 60px;}
+
+
