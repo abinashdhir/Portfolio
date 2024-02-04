@@ -23,13 +23,23 @@ h1, h2, h3, h4, h5, h6, p, span, strong, title, em { font-family: 'Times New Rom
 .main {height: calc(100vh - 80px); display: flex; align-items: center; justify-content: center;}
 
 /* home container  */
-.main.homeContent {display: flex; flex-direction: row; gap: 100px; flex-wrap: wrap; padding: 60px 40px; box-sizing: border-box; background-color: #000000e8;}
-.main.homeContent .thumbBox {width: 40%; max-width: 300px; aspect-ratio: 1; background-color: red; border-radius: 50%; padding: 5px; box-sizing: border-box; overflow: hidden;}
-.main.homeContent .thumbBox .thumb {aspect-ratio: 1; background-color: #000; border-radius: 50%; background: url(./img/picture_000.jpg) no-repeat center; height: 100%; width: 100%; background-size: contain;}
-.main.homeContent .thumbContent {display: flex; color: #fff; flex-direction: column; max-width: 60%;}
-.main.homeContent .thumbContent h1 {font-size: 64px; color: #fff; line-height: normal; font-weight: 700; font-family: Georgia, 'Times New Roman', Times, serif;}
-.main.homeContent .thumbContent h1 strong {font-size: 84px; color: #fff; line-height: normal; font-weight: 700; font-family: Georgia, 'Times New Roman', Times, serif;}
-.main.homeContent .thumbContent h2 {font-size: 34px; color: #fff; line-height: normal; font-weight: 700; font-family: Arial, Helvetica, sans-serif;}
-.main.homeContent .thumbContent p {font-size: 16px; color: #fff; line-height: normal; font-weight: 700; font-family: Arial, Helvetica, sans-serif; word-break: break-word; margin-top: 60px;}
+.main.homeContent {flex-direction: column; display: flex; gap: 10px; box-sizing: border-box;}
+.main.homeContent .homeContentOne {display: flex; flex-direction: row; gap: 100px; flex-wrap: wrap; padding: 60px 40px; box-sizing: border-box; background-color: #000000e8; height: 100vh; justify-content: center; align-items: center;}
+.main.homeContent .homeContentOne .thumbBox {width: 40%; max-height: 350px; max-width: 350px; aspect-ratio: 1; background-color: red; border-radius: 50%; padding: 5px; box-sizing: border-box; overflow: hidden;}
+.main.homeContent .homeContentOne .thumbBox .thumb {aspect-ratio: 1; background-color: #000; border-radius: 50%; background: url(./img/picture_000.jpg) no-repeat center; height: 100%; width: 100%; background-size: cover;}
+.main.homeContent .homeContentOne .thumbContent {display: flex; color: #fff; flex-direction: column; max-width: 40%;}
+.main.homeContent .homeContentOne .thumbContent h1 {font-size: 64px; color: #fff; line-height: normal; font-weight: 700; font-family: Georgia, 'Times New Roman', Times, serif;}
+.main.homeContent .homeContentOne .thumbContent h1 strong {font-size: 84px; color: #ab1515; line-height: normal; font-weight: 700; font-family: Georgia, 'Times New Roman', Times, serif;}
+.main.homeContent .homeContentOne .thumbContent h2 {font-size: 34px; color: #fff; line-height: normal; font-weight: 700; font-family: Arial, Helvetica, sans-serif;}
+.main.homeContent .homeContentOne .thumbContent p {font-size: 16px; color: #fff; line-height: normal; font-weight: 700; font-family: Arial, Helvetica, sans-serif; word-break: break-word; margin-top: 60px;}
 
-
+/* contact */
+.main.contactContent {display: flex; justify-content: center; align-items: center; height: 100vh; width: 100%;}
+.main.contactContent .contactCard {display: flex; border-radius: 25px 25px; background-color: #966df5a8; height: auto; max-height: 80%; width: 80%; position: relative; padding: 30px; box-sizing: border-box;}
+.main.contactContent .contactCard ul {list-style-type: none; gap: 10px; height: auto; width: 100%; padding: 0; margin: 0; display: flex; flex-direction: column;}
+.main.contactContent .contactCard ul li {height: auto; background-color: #a37dff; padding: 10px 20px; border-radius: 30px; align-items: center; width: 100%; box-sizing: border-box; align-items: center;}
+.main.contactContent .contactCard ul li:hover {background-color: #7947ede3;}
+.main.contactContent .contactCard ul li dl {display: flex; gap: 40px;}
+.main.contactContent .contactCard ul li dl dt {display: flex; height: auto; font-size: 24px; font-weight: 700; font-family: Arial, Helvetica, sans-serif; color: #f0f1f2; width: 120px; height: auto;}
+.main.contactContent .contactCard ul li dl dd {display: flex; height: auto;  width: 140px; height: auto;}
+.main.contactContent .contactCard ul li dl dd a {display: flex; font-size: 21px; font-weight: 700; font-family: Arial, Helvetica, sans-serif; color: #f0f1f2; height: auto;}
